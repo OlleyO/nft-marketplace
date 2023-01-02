@@ -16,6 +16,9 @@
   }
 
   .image-wrapper {
+    border-top-right-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+    overflow: hidden;
     position: relative;
     width: 100%;
     aspect-ratio: 1 / 1;

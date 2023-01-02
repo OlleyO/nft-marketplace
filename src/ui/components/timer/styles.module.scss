@@ -1,0 +1,46 @@
+@import "@styles/typography.scss";
+@import "@styles/functions.scss";
+
+.timer {
+  max-width: rem(295px);
+  padding: rem(30px);
+  background: rgba(59, 59, 59, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: var(--border-radius);
+
+  .ends-in {
+    font-family: var(--space-font-family);
+
+    @extend .caption;
+  }
+
+  .clock {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto;
+    column-gap: rem(10px);
+    row-gap: rem(5px);
+
+    .minutes {
+      grid-column: 3 / 4;
+    }
+
+    .seconds {
+      grid-column: 5 / 6;
+    }
+  }
+
+  .value {
+    font-family: var(--space-font-family);
+
+    @extend .h3;
+  }
+
+  .seconds,
+  .minutes,
+  .hours {
+    font-family: var(--space-font-family);
+
+    @extend .caption;
+  }
+}

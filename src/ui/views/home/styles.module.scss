@@ -145,6 +145,9 @@ section.nft-highlight-section {
     padding-top: 0;
     display: flex;
 
+    justify-content: space-between;
+    align-items: center;
+
     z-index: 999;
 
     .artist-and-button {

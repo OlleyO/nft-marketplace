@@ -17,6 +17,7 @@ import {
 } from "src/core/types";
 
 import styles from "./styles.module.scss";
+import Timer from "@components/timer";
 
 const collectionData: TrendingCollectionOverview[] = [
   {
@@ -356,7 +357,9 @@ const HomeView: React.FC = () => {
                 See NFT
               </Button>
             </div>
-            <div></div>
+            <div>
+              <Timer auctionTime={new Date("2023-01-3")} />
+            </div>
           </article>
         </section>
         <section></section>
