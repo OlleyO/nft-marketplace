@@ -1,0 +1,61 @@
+@import "@styles/typography.scss";
+@import "@styles/functions.scss";
+
+.nft-card {
+  height: rem(469px);
+  border-radius: var(--border-radius);
+  background-color: var(--background-secondary);
+
+  transition: 0.3s;
+
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(0.95);
+  }
+
+  .image-wrapper {
+    position: relative;
+    width: 100%;
+    height: rem(296px);
+  }
+
+  .nft-info {
+    padding: rem(20px) rem(30px);
+    padding-bottom: rem(35px);
+
+    .name {
+      font-family: var(--work-font-family);
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 140%;
+
+      text-transform: capitalize;
+      margin-bottom: rem(5px);
+    }
+
+    .nft-bottom {
+      display: flex;
+      justify-content: space-between;
+      margin-top: rem(27px);
+    }
+  }
+}
+
+.additinal-info {
+  display: flex;
+  flex-direction: column;
+  gap: rem(8px);
+
+  .caption {
+    font-family: var(--space-font-family);
+    color: var(--caption);
+    @extend .caption;
+  }
+
+  .value {
+    font-family: var(--space-font-family);
+    @extend .base;
+  }
+}

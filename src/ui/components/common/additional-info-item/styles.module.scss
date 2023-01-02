@@ -1,0 +1,20 @@
+@import "@styles/functions.scss";
+@import "@styles/typography.scss";
+
+.additinal-info-item {
+  display: flex;
+  flex-direction: column;
+
+  h4 {
+    font-family: "Space Mono", monospace;
+    @extend .h4;
+  }
+
+  span {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(23.99px);
+    line-height: 160%;
+  }
+}

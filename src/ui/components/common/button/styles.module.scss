@@ -1,0 +1,65 @@
+@import "@styles/typography.scss";
+@import "@styles/functions.scss";
+
+.button {
+  outline: none;
+  border: none;
+  background: none;
+  text-transform: capitalize;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(12px);
+
+  color: var(--text);
+
+  cursor: pointer;
+
+  border-radius: var(--border-radius);
+
+  font-family: var(--work-font-family);
+
+  background-color: var(--primary);
+
+  transition: 0.3s ease;
+
+  &:hover {
+    transform: scale(0.95);
+  }
+
+  i {
+    font-size: rem(20px);
+  }
+
+  &.primary {
+    padding: 0 rem(50px);
+    @extend .h5;
+
+    height: rem(72px);
+  }
+
+  &.secondary {
+    padding: 0 rem(30px);
+    height: rem(60px);
+    font-family: var(--work-font-family);
+    font-style: normal;
+    font-weight: 600;
+    font-size: rem(16px);
+    line-height: 140%;
+  }
+
+  &.tertiary {
+    height: rem(46px);
+  }
+
+  &.outlined {
+    background-color: transparent;
+
+    border: rem(2px) solid var(--primary);
+
+    i {
+      color: var(--primary);
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@import "@styles/typography.scss";
+@import "@styles/functions.scss";
+
+.header {
+  padding: rem(20px) rem(50px);
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: rem(12px);
+    font-size: rem(22px);
+
+    i {
+      font-size: rem(32px);
+      color: var(--primary);
+    }
+
+    font-family: var(--space-font-family);
+    @extend .base;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    gap: rem(10px);
+
+    font-family: var(--work-font-family);
+    @extend .base;
+    font-weight: 600;
+
+    li {
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(0.95);
+      }
+    }
+
+    a {
+      padding: rem(12px) rem(20px);
+    }
+  }
+}

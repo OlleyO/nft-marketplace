@@ -1,0 +1,52 @@
+@import "@styles/typography.scss";
+@import "@styles/functions.scss";
+
+// @keyframes highlighted-card-swing {
+//   0% {
+//     transform: rotateY(30deg);
+//   }
+//   50% {
+//     transform: rotateY(0deg);
+//   }
+//   100% {
+//     transform: rotateY(-30deg);
+//   }
+// }
+
+.highlighted-nft-card {
+  max-width: rem(510px);
+
+  max-height: rem(510px);
+  flex-basis: 50%;
+
+  border-radius: rem(20px);
+
+  background-color: var(--background-secondary);
+
+  // animation-name: highlighted-card-swing;
+  // animation-duration: 1.5s;
+  // transform: perspective(10px, 10px, 10px);
+  // animation-iteration-count: infinite;
+  // animation-timing-function: linear;
+
+  .image-wrapper {
+    position: relative;
+
+    min-width: 100%;
+    max-height: rem(401px);
+    min-height: rem(401px);
+  }
+
+  .nft-name {
+    @extend .h5;
+    font-family: "Work Sans", sans-serif;
+
+    margin-bottom: rem(10px);
+  }
+
+  .text-content {
+    margin-top: rem(22px);
+    padding: 0 rem(20px);
+    padding-bottom: rem(22px);
+  }
+}

@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "nft-marketplace";
+  src: url("fonts/nft-marketplace.ttf?49cii4") format("truetype"),
+    url("fonts/nft-marketplace.woff?49cii4") format("woff"),
+    url("fonts/nft-marketplace.svg?49cii4#nft-marketplace") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "nft-marketplace" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-basketball:before {
+  content: "\e900";
+}
+.icon-bookmarks-simple:before {
+  content: "\e901";
+}
+.icon-camera:before {
+  content: "\e902";
+}
+.icon-magic-wand:before {
+  content: "\e903";
+}
+.icon-music-notes:before {
+  content: "\e904";
+}
+.icon-paint-brush:before {
+  content: "\e905";
+}
+.icon-planet:before {
+  content: "\e906";
+}
+.icon-swatches:before {
+  content: "\e907";
+}
+.icon-video-camera:before {
+  content: "\e908";
+}
+.icon-arrow-left:before {
+  content: "\e909";
+}
+.icon-arrow-right:before {
+  content: "\e90a";
+}
+.icon-copy:before {
+  content: "\e90b";
+}
+.icon-discord-logo:before {
+  content: "\e90c";
+}
+.icon-envelope-simple:before {
+  content: "\e90d";
+}
+.icon-eye:before {
+  content: "\e90e";
+}
+.icon-eye-slash:before {
+  content: "\e90f";
+}
+.icon-globe:before {
+  content: "\e910";
+}
+.icon-instagram-logo:before {
+  content: "\e911";
+}
+.icon-list:before {
+  content: "\e912";
+}
+.icon-lock-key:before {
+  content: "\e913";
+}
+.icon-magnifying-glass:before {
+  content: "\e914";
+}
+.icon-plus:before {
+  content: "\e915";
+}
+.icon-rocket:before {
+  content: "\e916";
+}
+.icon-rocket-launch:before {
+  content: "\e917";
+}
+.icon-storefront:before {
+  content: "\e918";
+}
+.icon-trend-up:before {
+  content: "\e91e";
+}
+.icon-twitter-logo:before {
+  content: "\e91d";
+}
+.icon-user:before {
+  content: "\e91c";
+}
+.icon-user-circle:before {
+  content: "\e91b";
+}
+.icon-wallet:before {
+  content: "\e91a";
+}
+.icon-youtube-logo:before {
+  content: "\e919";
+}

@@ -1,0 +1,174 @@
+@import "@styles/typography.scss";
+@import "@styles/functions.scss";
+
+.main {
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: rem(160px);
+
+  max-width: rem(1280px);
+
+  & > section {
+    padding: 0 rem(115px);
+  }
+
+  .section-headline-button {
+    align-self: flex-end;
+    padding: 0 rem(50px);
+  }
+}
+
+.discover-section {
+  margin-top: rem(80px);
+  display: flex;
+  justify-content: center;
+
+  gap: rem(30px);
+
+  .left {
+    flex-basis: 50%;
+  }
+
+  h1 {
+    @extend .h1;
+
+    margin-bottom: rem(20px);
+    text-transform: capitalize;
+    max-width: rem(455px);
+    font-weight: 600;
+  }
+
+  p {
+    @extend .body-text;
+    text-transform: capitalize;
+  }
+
+  .get-started-button {
+    padding: 0 rem(50px);
+  }
+
+  .main-text,
+  .get-started-button {
+    margin-bottom: rem(30px);
+  }
+
+  .additinal-info {
+    display: flex;
+    gap: rem(30px);
+    margin: 0;
+    // justify-content: space-between;
+
+    .additinal-info-item {
+      flex: 1;
+    }
+  }
+}
+
+.trending-section {
+  .heading {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h3 {
+    font-family: "Work Sans", sans-serif;
+
+    @extend .h3;
+  }
+
+  .subhead {
+    margin-top: rem(10px);
+    @extend .body-text;
+  }
+}
+
+.collections {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.top-creators {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, rem(238px));
+  gap: rem(30px);
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: rem(30px);
+
+  .category {
+    flex-basis: rem(240px);
+    aspect-ratio: 60 / 79;
+  }
+}
+
+.more-nfts {
+  display: flex;
+  gap: rem(30px);
+
+  .nft {
+    flex: 1;
+  }
+}
+
+section.nft-highlight-section {
+  position: relative;
+  padding: 0;
+  width: 100%;
+  height: rem(640px);
+  background: url("/images/mushrooms.png") center no-repeat;
+
+  background-size: cover;
+
+  display: flex;
+  align-items: flex-end;
+
+  &::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #a259ff 100%);
+  }
+
+  article {
+    width: 100%;
+    padding: rem(60px) rem(115px);
+    padding-top: 0;
+    display: flex;
+
+    z-index: 999;
+
+    .artist-and-button {
+      display: flex;
+      flex-direction: column;
+      gap: rem(30px);
+      align-items: flex-start;
+
+      h2 {
+        font-family: var(--work-font-family);
+
+        @extend .h2;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .see-nft-button {
+    color: #2b2b2b;
+    background-color: #fff;
+    padding: 0 rem(50px);
+
+    i {
+      color: var(--primary);
+    }
+  }
+}

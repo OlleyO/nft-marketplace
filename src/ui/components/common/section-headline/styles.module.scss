@@ -1,0 +1,28 @@
+@import "@styles/typography.scss";
+@import "@styles/functions.scss";
+
+.section-headline {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: rem(60px);
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    gap: rem(10px);
+
+    .heading {
+      font-family: "Work Sans", sans-serif;
+
+      @extend .h3;
+    }
+
+    .subhead {
+      @extend .body-text;
+    }
+  }
+
+  .suffix {
+    align-self: flex-end;
+  }
+}

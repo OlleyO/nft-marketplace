@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;600&display=swap");
+@import "@public/style.css";
+
+:root {
+  --background: #2b2b2b;
+  --background-secondary: #3b3b3b;
+  --caption: #858584;
+  --label: #858584;
+  --text: #fff;
+  --primary: #a259ff;
+  --blue-accent: #377df7;
+  --red-accent: #ff7262;
+  --gradient1: linear-gradient(100.92deg, #a259ff 13.57%, #ff6250 97.65%);
+  --gradient2: linear-gradient(128.15deg, #a259ff 49.75%, #377df7 136.56%);
+
+  --space-font-family: "Space Mono", monospace;
+  --work-font-family: "Work Sans", sans-serif;
+
+  --border-radius: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+
+  color: var(--text);
+  background-color: var(--background);
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 2000px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}

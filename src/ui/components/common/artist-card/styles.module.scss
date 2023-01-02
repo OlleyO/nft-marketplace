@@ -1,0 +1,25 @@
+@import "@styles/typography.scss";
+@import "@styles/functions.scss";
+
+.artist-card {
+  display: flex;
+  gap: rem(12px);
+  align-items: center;
+
+  &.with-background {
+    padding: rem(11px) rem(20px);
+    background-color: var(--background-secondary);
+    border-radius: var(--border-radius);
+  }
+
+  .image-wrapper {
+    position: relative;
+    width: rem(24px);
+    height: rem(24px);
+  }
+
+  .artist-name {
+    @extend .base;
+    font-family: "Work Sans", sans-serif;
+  }
+}
