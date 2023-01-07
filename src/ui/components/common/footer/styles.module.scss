@@ -1,0 +1,13 @@
+@import "@styles/functions.scss";
+@import "@styles/typography.scss";
+
+.footer {
+  padding: rem(40px) rem(115.29px);
+  background-color: var(--background-secondary);
+
+  margin-top: rem(80px);
+
+  .content-wrapper {
+    display: flex;
+  }
+}

@@ -175,3 +175,16 @@ section.nft-highlight-section {
     }
   }
 }
+
+.info-cards {
+  display: flex;
+  gap: rem(30px);
+
+  .info-card {
+    flex: 1;
+  }
+}
+
+.join-weekly-digest-section {
+  padding-top: rem(40px);
+}

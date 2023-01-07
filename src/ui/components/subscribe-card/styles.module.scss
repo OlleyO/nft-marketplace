@@ -1,0 +1,46 @@
+@import "@styles/typography.scss";
+@import "@styles/functions.scss";
+
+.subscribe-card {
+  display: flex;
+  padding: rem(60px);
+  gap: rem(80px);
+  background-color: var(--background-secondary);
+  border-radius: var(--border-radius);
+
+  min-height: rem(430px);
+
+  .left {
+    flex-basis: rem(425px);
+    flex-shrink: 0;
+    .image-wrapper {
+      height: 100%;
+      position: relative;
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      font-family: var(--work-font-family);
+      font-style: normal;
+      font-weight: 600;
+      font-size: 38px;
+      line-height: 120%;
+      margin-bottom: rem(10px);
+    }
+
+    p {
+      white-space: pre-line;
+      font-family: var(--work-font-family);
+      font-style: normal;
+      font-weight: 400;
+      font-size: rem(22px);
+      line-height: 160%;
+      text-transform: capitalize;
+      margin-bottom: rem(40px);
+    }
+  }
+}

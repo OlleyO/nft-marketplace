@@ -18,6 +18,9 @@ import {
 
 import styles from "./styles.module.scss";
 import Timer from "@components/timer";
+import InfoCard from "@components/info-card";
+import SubscribeCard from "@components/subscribe-card";
+import Footer from "@components/common/footer";
 
 const collectionData: TrendingCollectionOverview[] = [
   {
@@ -231,6 +234,8 @@ const nfts: Nft[] = [
 ];
 
 const HomeView: React.FC = () => {
+  const now = new Date();
+
   return (
     <>
       <Header />
@@ -358,12 +363,47 @@ const HomeView: React.FC = () => {
               </Button>
             </div>
             <div>
-              <Timer auctionTime={new Date("2023-01-3")} />
+              <Timer
+                auctionTime={
+                  new Date(
+                    `${now.getFullYear}-${now.getMonth}-${now.getDate() + 1}`
+                  )
+                }
+              />
             </div>
           </article>
         </section>
-        <section></section>
+        <section>
+          <SectionHeadline
+            heading="How It Works"
+            subhead="Find Out To Get Started"
+          />
+          <div className={styles["info-cards"]}>
+            <InfoCard
+              className={styles["info-card"]}
+              img="/images/Icon.png"
+              title="Setup Your Wallet"
+              description="Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right corner."
+            />
+            <InfoCard
+              className={styles["info-card"]}
+              img="/images/Icon-1.png"
+              title="Create Collection"
+              description="Upload your work and setup your collection. Add a description, social links and floor price."
+            />
+            <InfoCard
+              className={styles["info-card"]}
+              img="/images/Icon-2.png"
+              title="Start Earning"
+              description="Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others."
+            />
+          </div>
+        </section>
+        <section className={styles["join-weekly-digest-section"]}>
+          <SubscribeCard />
+        </section>
       </main>
+      <Footer />
     </>
   );
 };

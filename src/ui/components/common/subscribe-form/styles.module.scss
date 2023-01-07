@@ -1,0 +1,39 @@
+@import "@styles/typography.scss";
+@import "@styles/functions.scss";
+
+.form {
+  display: flex;
+
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  //   position: relative;
+
+  .button {
+    // position: relative;
+    left: rem(-50px);
+    flex-basis: 50%;
+  }
+
+  input {
+    flex-basis: 50%;
+    position: relative;
+    outline: none;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: rem(19px) rem(20px);
+    padding-right: rem(12px);
+
+    &::placeholder {
+      font-family: var(--work-font-family);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      /* or 22px */
+
+      /* Background */
+
+      color: var(--background-secondary);
+    }
+  }
+}

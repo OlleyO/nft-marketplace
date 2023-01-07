@@ -10,7 +10,7 @@
 
   .ends-in {
     font-family: var(--space-font-family);
-
+    margin-bottom: rem(10px);
     @extend .caption;
   }
 
