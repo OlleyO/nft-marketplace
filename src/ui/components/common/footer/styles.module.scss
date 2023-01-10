@@ -9,5 +9,51 @@
 
   .content-wrapper {
     display: flex;
+    justify-content: space-between;
+
+    h5 {
+      @extend .h5;
+      font-family: var(--space-font-family);
+      margin-bottom: rem(25px);
+    }
+  }
+
+  ul {
+    display: flex;
+    gap: rem(10px);
+  }
+
+  p,
+  a {
+    color: var(--footer-text);
+    font-family: var(--work-font-family);
+
+    @extend .base;
+  }
+
+  p {
+    font-family: var(--work-font-family);
+    @extend .base;
+  }
+
+  i {
+    font-size: rem(32px);
+  }
+
+  .join-community {
+    margin-top: rem(20px);
+    margin-bottom: rem(15px);
+  }
+
+  .subscribe {
+    p {
+      margin-bottom: rem(20px);
+    }
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    gap: rem(20px);
   }
 }
