@@ -9,7 +9,8 @@
 
   .content-wrapper {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
+    gap: rem(30px);
 
     h5 {
       @extend .h5;
@@ -56,4 +57,16 @@
     flex-direction: column;
     gap: rem(20px);
   }
+}
+
+.nft-marketplace-info {
+  flex: 1.5;
+}
+
+.explore {
+  flex: 1;
+}
+
+.subscribe {
+  flex: 2;
 }

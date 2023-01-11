@@ -88,6 +88,10 @@
   display: flex;
   gap: 30px;
   justify-content: center;
+
+  .collection-card-wrapper {
+    flex: 1;
+  }
 }
 
 .top-creators {
@@ -98,13 +102,20 @@
 }
 
 .categories {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+
   gap: rem(30px);
+  grid-template-columns: repeat(4, 1fr);
+
+  // grid-template-rows: auto auto auto;
 
   .category {
-    flex-basis: rem(240px);
-    aspect-ratio: 60 / 79;
+    // width: 100%;
+    // min-height: 100%;
+    // width: 500px;
+    // flex-basis: rem(240px);
+    // flex-shrink: 1;
+    // flex-basis: 22.85%;
   }
 }
 

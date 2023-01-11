@@ -21,8 +21,7 @@
       }
 
       &.secondary {
-        width: rem(100px);
-        height: rem(100px);
+        aspect-ratio: 1 / 1;
       }
 
       transition: 0.3s ease;

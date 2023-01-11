@@ -63,6 +63,7 @@
     .additional-info {
       display: flex;
       gap: rem(10px);
+      white-space: nowrap;
 
       @extend .base;
       font-family: var(--work-font-family);
